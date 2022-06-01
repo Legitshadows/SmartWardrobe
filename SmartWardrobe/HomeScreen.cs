@@ -26,5 +26,10 @@ namespace SmartWardrobe
             s1.Show();
             this.Hide();
         }
+
+        private void HomeScreen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
