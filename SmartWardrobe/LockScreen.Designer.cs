@@ -75,7 +75,7 @@
             this.hScrollBar1.LargeChange = 1;
             this.hScrollBar1.Location = new System.Drawing.Point(639, 427);
             this.hScrollBar1.Name = "hScrollBar1";
-            this.hScrollBar1.Size = new System.Drawing.Size(271, 35);
+            this.hScrollBar1.Size = new System.Drawing.Size(401, 35);
             this.hScrollBar1.TabIndex = 2;
             this.hScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar1_Scroll);
             // 
@@ -86,7 +86,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = global::SmartWardrobe.Properties.Resources.power;
             this.pictureBox1.InitialImage = global::SmartWardrobe.Properties.Resources.power;
-            this.pictureBox1.Location = new System.Drawing.Point(1321, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(1413, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 50);
             this.pictureBox1.TabIndex = 3;

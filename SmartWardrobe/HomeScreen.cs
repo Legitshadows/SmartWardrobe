@@ -17,7 +17,13 @@ namespace SmartWardrobe
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void HomeScreen_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             LockScreen s1 = new LockScreen();
             s1.Location = this.Location;
@@ -27,7 +33,17 @@ namespace SmartWardrobe
             this.Hide();
         }
 
-        private void HomeScreen_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }
