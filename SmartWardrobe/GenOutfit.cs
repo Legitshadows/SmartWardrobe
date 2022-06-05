@@ -36,5 +36,30 @@ namespace SmartWardrobe
         {
             this.Close();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            BuscarRopa s1 = new BuscarRopa();
+            s1.Location = this.Location;
+            s1.StartPosition = FormStartPosition.Manual;
+            s1.FormClosing += delegate { this.Show(); };
+            s1.Show();
+            this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

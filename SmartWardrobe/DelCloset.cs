@@ -36,5 +36,26 @@ namespace SmartWardrobe
         {
             this.Close(); 
         }
+
+        private void btnEnter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtNombre.Clear();
+            txtMarca.Clear();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            AddCloset s1 = new AddCloset();
+            s1.Location = this.Location;
+            s1.StartPosition = FormStartPosition.Manual;
+            s1.FormClosing += delegate { this.Show(); };
+            s1.Show();
+            this.Hide();
+        }
     }
 }
