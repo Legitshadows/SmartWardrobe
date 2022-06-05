@@ -84,6 +84,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SmartWardrobeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SmartWardrobeDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddCloset.resx">
       <DependentUpon>AddCloset.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,6 +126,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SmartWardrobeDataSet.xsc">
+      <DependentUpon>SmartWardrobeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SmartWardrobeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SmartWardrobeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SmartWardrobeDataSet.xss">
+      <DependentUpon>SmartWardrobeDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

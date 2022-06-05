@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SmartWardrobe
 {
@@ -60,6 +61,34 @@ namespace SmartWardrobe
             s1.FormClosing += delegate { this.Show(); };
             s1.Show();
             this.Hide();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDb)\MSSqllocalDb;Initial Catalog=SmartWardrobe;Integrated Security=True");
+            con.Open();
+            SqlCommand cmd = new SqlCommand("Insert into Closet(Nombre, Marca, TipoRopa, UbicacionCloset) values ('" + txtNombre.Text + "','" + txtMarca.Text + "','" + cmbType.Text + "','" + cmbLocation.Text + "')", con);
+            int i = cmd.ExecuteNonQuery();
+
+            if (i != 0)
+            {
+                MessageBox.Show("Guardado!");
+            }
+            else
+            {
+                MessageBox.Show("Error!");
+            }
+            con.Close();
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            this.txtNombre.MaxLength = 20;
+        }
+
+        private void txtMarca_TextChanged(object sender, EventArgs e)
+        {
+            this.txtMarca.MaxLength = 20;
         }
     }
 }

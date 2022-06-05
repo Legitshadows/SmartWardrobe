@@ -106,6 +106,7 @@
             this.btnAdd.TabIndex = 31;
             this.btnAdd.Text = "Añadir";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnSearch
             // 
@@ -147,6 +148,7 @@
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(797, 20);
             this.txtMarca.TabIndex = 27;
+            this.txtMarca.TextChanged += new System.EventHandler(this.txtMarca_TextChanged);
             // 
             // label2
             // 
@@ -176,6 +178,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(797, 20);
             this.txtNombre.TabIndex = 24;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // label4
             // 

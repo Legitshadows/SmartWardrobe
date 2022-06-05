@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DelCloset));
             this.powerButton = new System.Windows.Forms.PictureBox();
             this.returnButton = new System.Windows.Forms.PictureBox();
@@ -41,10 +42,21 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.smartWardrobeDataSet = new SmartWardrobe.SmartWardrobeDataSet();
+            this.closetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.closetTableAdapter = new SmartWardrobe.SmartWardrobeDataSetTableAdapters.ClosetTableAdapter();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.marcaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipoRopaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ubicacionClosetDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.powerButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.homeButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.smartWardrobeDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.closetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // powerButton
@@ -95,7 +107,7 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(1231, 430);
+            this.btnAdd.Location = new System.Drawing.Point(1124, 450);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(131, 54);
             this.btnAdd.TabIndex = 23;
@@ -106,7 +118,7 @@
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(1074, 325);
+            this.btnClear.Location = new System.Drawing.Point(967, 345);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(131, 54);
             this.btnClear.TabIndex = 22;
@@ -117,7 +129,7 @@
             // btnEnter
             // 
             this.btnEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnter.Location = new System.Drawing.Point(1231, 325);
+            this.btnEnter.Location = new System.Drawing.Point(1124, 345);
             this.btnEnter.Name = "btnEnter";
             this.btnEnter.Size = new System.Drawing.Size(131, 54);
             this.btnEnter.TabIndex = 21;
@@ -130,7 +142,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1068, 196);
+            this.label3.Location = new System.Drawing.Point(961, 216);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(282, 33);
             this.label3.TabIndex = 20;
@@ -139,7 +151,7 @@
             // 
             // txtMarca
             // 
-            this.txtMarca.Location = new System.Drawing.Point(1063, 250);
+            this.txtMarca.Location = new System.Drawing.Point(956, 270);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(299, 20);
             this.txtMarca.TabIndex = 19;
@@ -149,7 +161,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1057, 72);
+            this.label2.Location = new System.Drawing.Point(950, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(305, 33);
             this.label2.TabIndex = 18;
@@ -168,10 +180,63 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(1063, 126);
+            this.txtNombre.Location = new System.Drawing.Point(956, 146);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(299, 20);
             this.txtNombre.TabIndex = 16;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nombreDataGridViewTextBoxColumn,
+            this.marcaDataGridViewTextBoxColumn,
+            this.tipoRopaDataGridViewTextBoxColumn,
+            this.ubicacionClosetDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.closetBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(66, 106);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(666, 443);
+            this.dataGridView1.TabIndex = 24;
+            // 
+            // smartWardrobeDataSet
+            // 
+            this.smartWardrobeDataSet.DataSetName = "SmartWardrobeDataSet";
+            this.smartWardrobeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // closetBindingSource
+            // 
+            this.closetBindingSource.DataMember = "Closet";
+            this.closetBindingSource.DataSource = this.smartWardrobeDataSet;
+            // 
+            // closetTableAdapter
+            // 
+            this.closetTableAdapter.ClearBeforeFill = true;
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            // 
+            // marcaDataGridViewTextBoxColumn
+            // 
+            this.marcaDataGridViewTextBoxColumn.DataPropertyName = "Marca";
+            this.marcaDataGridViewTextBoxColumn.HeaderText = "Marca";
+            this.marcaDataGridViewTextBoxColumn.Name = "marcaDataGridViewTextBoxColumn";
+            // 
+            // tipoRopaDataGridViewTextBoxColumn
+            // 
+            this.tipoRopaDataGridViewTextBoxColumn.DataPropertyName = "TipoRopa";
+            this.tipoRopaDataGridViewTextBoxColumn.HeaderText = "TipoRopa";
+            this.tipoRopaDataGridViewTextBoxColumn.Name = "tipoRopaDataGridViewTextBoxColumn";
+            // 
+            // ubicacionClosetDataGridViewTextBoxColumn
+            // 
+            this.ubicacionClosetDataGridViewTextBoxColumn.DataPropertyName = "UbicacionCloset";
+            this.ubicacionClosetDataGridViewTextBoxColumn.HeaderText = "UbicacionCloset";
+            this.ubicacionClosetDataGridViewTextBoxColumn.Name = "ubicacionClosetDataGridViewTextBoxColumn";
             // 
             // DelCloset
             // 
@@ -180,6 +245,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1534, 602);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnEnter);
@@ -195,10 +261,14 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DelCloset";
             this.Text = "DelCloset";
+            this.Load += new System.EventHandler(this.DelCloset_Load);
             ((System.ComponentModel.ISupportInitialize)(this.powerButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.homeButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.smartWardrobeDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.closetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,5 +288,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private SmartWardrobeDataSet smartWardrobeDataSet;
+        private System.Windows.Forms.BindingSource closetBindingSource;
+        private SmartWardrobeDataSetTableAdapters.ClosetTableAdapter closetTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn marcaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipoRopaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ubicacionClosetDataGridViewTextBoxColumn;
     }
 }
