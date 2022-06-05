@@ -85,6 +85,7 @@
             this.addCloset.TabIndex = 7;
             this.addCloset.Text = "Agregar Al Closet";
             this.addCloset.UseVisualStyleBackColor = false;
+            this.addCloset.Click += new System.EventHandler(this.addCloset_Click);
             // 
             // eliminarCloset
             // 
@@ -96,6 +97,7 @@
             this.eliminarCloset.TabIndex = 8;
             this.eliminarCloset.Text = "Eliminar Del Closet";
             this.eliminarCloset.UseVisualStyleBackColor = false;
+            this.eliminarCloset.Click += new System.EventHandler(this.eliminarCloset_Click);
             // 
             // HomeScreen
             // 
