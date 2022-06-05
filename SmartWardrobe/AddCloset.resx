@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="homeButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAr1JREFUaEPt
         mDuLU1EUhaOINj4LLbTQThuxslNERPAfyDRiZW03f2FaS/+BIIgIlk5Ao8S8E0hjbGwUH42gU6hMXPey
@@ -135,7 +135,7 @@
         royIUUWujLBRGa6MiMFJr8pFroywURmm+r+LS5ZMm0rlLzF7LBytKZF6AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pictureBox3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="returnButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAV1JREFUSEvt
         lrlOw0AYhE3NUSCBoKCjoISejoeiAJ4DgXgBoKGiDAKMMb4kExm3dBxSKiiRlhlpIqHgBJN4N40/aZTs
@@ -147,7 +147,7 @@
         YII=
 </value>
   </data>
-  <data name="pictureBox4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="powerButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAkxJREFUSEvt
         lktrE1EcxbNU0J0LrVpFpfS7qAvxhfoJQlVQi5/BjQt3vhbiQsX3onUbsCHNO9mk0FVBcW2r4Ku19XeG

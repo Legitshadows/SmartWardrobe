@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddCloset));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.homeButton = new System.Windows.Forms.PictureBox();
+            this.returnButton = new System.Windows.Forms.PictureBox();
+            this.powerButton = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homeButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returnButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.powerButton)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -49,39 +49,41 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox2
+            // homeButton
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(1438, 289);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.homeButton.BackColor = System.Drawing.Color.Transparent;
+            this.homeButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("homeButton.BackgroundImage")));
+            this.homeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.homeButton.Location = new System.Drawing.Point(1438, 289);
+            this.homeButton.Name = "homeButton";
+            this.homeButton.Size = new System.Drawing.Size(100, 50);
+            this.homeButton.TabIndex = 1;
+            this.homeButton.TabStop = false;
+            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
             // 
-            // pictureBox3
+            // returnButton
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(1438, 397);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.returnButton.BackColor = System.Drawing.Color.Transparent;
+            this.returnButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("returnButton.BackgroundImage")));
+            this.returnButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.returnButton.Location = new System.Drawing.Point(1438, 397);
+            this.returnButton.Name = "returnButton";
+            this.returnButton.Size = new System.Drawing.Size(100, 50);
+            this.returnButton.TabIndex = 2;
+            this.returnButton.TabStop = false;
+            this.returnButton.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // pictureBox4
+            // powerButton
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Location = new System.Drawing.Point(1438, 189);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
+            this.powerButton.BackColor = System.Drawing.Color.Transparent;
+            this.powerButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("powerButton.BackgroundImage")));
+            this.powerButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.powerButton.Location = new System.Drawing.Point(1438, 189);
+            this.powerButton.Name = "powerButton";
+            this.powerButton.Size = new System.Drawing.Size(100, 50);
+            this.powerButton.TabIndex = 3;
+            this.powerButton.TabStop = false;
+            this.powerButton.Click += new System.EventHandler(this.powerButton_Click);
             // 
             // AddCloset
             // 
@@ -90,17 +92,17 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1566, 680);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.powerButton);
+            this.Controls.Add(this.returnButton);
+            this.Controls.Add(this.homeButton);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddCloset";
             this.Text = "AddCloset";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homeButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returnButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.powerButton)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -108,8 +110,8 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox homeButton;
+        private System.Windows.Forms.PictureBox returnButton;
+        private System.Windows.Forms.PictureBox powerButton;
     }
 }
