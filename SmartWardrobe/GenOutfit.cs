@@ -7,11 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SmartWardrobe
 {
     public partial class GenOutfit : Form
     {
+        public static string Cabeza = "";
+        public static string Torso = "";
+        public static string Piernas = "";
+        public static string Accesorios = "";
+
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDb)\MSSqllocalDb;Initial Catalog=SmartWardrobe;Integrated Security=True");
         public GenOutfit()
         {
             InitializeComponent();
@@ -61,5 +68,27 @@ namespace SmartWardrobe
         {
 
         }
+
+        private void btnGen_Click(object sender, EventArgs e)
+        {
+            Cabeza = comboBox1.SelectedItem.ToString();
+            Torso = comboBox2.SelectedItem.ToString();
+            Piernas = cmbType.SelectedItem.ToString();
+            Accesorios = cmbLocation.SelectedItem.ToString();
+
+            ResultOutfit s1 = new ResultOutfit();
+            s1.Location = this.Location;
+            s1.StartPosition = FormStartPosition.Manual;
+            s1.FormClosing += delegate { this.Show(); };
+            s1.Show();
+            this.Hide();
+        }
+
+        private void GenOutfit_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        
     }
 }

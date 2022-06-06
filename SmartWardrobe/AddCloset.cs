@@ -62,7 +62,7 @@ namespace SmartWardrobe
             s1.Show();
             this.Hide();
         }
-
+        
         private void btnAdd_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDb)\MSSqllocalDb;Initial Catalog=SmartWardrobe;Integrated Security=True");

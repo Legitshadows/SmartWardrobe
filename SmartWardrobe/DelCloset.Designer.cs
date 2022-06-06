@@ -43,20 +43,20 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.smartWardrobeDataSet = new SmartWardrobe.SmartWardrobeDataSet();
-            this.closetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.closetTableAdapter = new SmartWardrobe.SmartWardrobeDataSetTableAdapters.ClosetTableAdapter();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.marcaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoRopaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ubicacionClosetDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.closetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.smartWardrobeDataSet = new SmartWardrobe.SmartWardrobeDataSet();
+            this.closetTableAdapter = new SmartWardrobe.SmartWardrobeDataSetTableAdapters.ClosetTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.powerButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.homeButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.smartWardrobeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.smartWardrobeDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // powerButton
@@ -155,6 +155,7 @@
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(299, 20);
             this.txtMarca.TabIndex = 19;
+            this.txtMarca.TextChanged += new System.EventHandler(this.txtMarca_TextChanged);
             // 
             // label2
             // 
@@ -184,6 +185,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(299, 20);
             this.txtNombre.TabIndex = 16;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // dataGridView1
             // 
@@ -199,20 +201,8 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(666, 443);
             this.dataGridView1.TabIndex = 24;
-            // 
-            // smartWardrobeDataSet
-            // 
-            this.smartWardrobeDataSet.DataSetName = "SmartWardrobeDataSet";
-            this.smartWardrobeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // closetBindingSource
-            // 
-            this.closetBindingSource.DataMember = "Closet";
-            this.closetBindingSource.DataSource = this.smartWardrobeDataSet;
-            // 
-            // closetTableAdapter
-            // 
-            this.closetTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             // 
             // nombreDataGridViewTextBoxColumn
             // 
@@ -237,6 +227,20 @@
             this.ubicacionClosetDataGridViewTextBoxColumn.DataPropertyName = "UbicacionCloset";
             this.ubicacionClosetDataGridViewTextBoxColumn.HeaderText = "UbicacionCloset";
             this.ubicacionClosetDataGridViewTextBoxColumn.Name = "ubicacionClosetDataGridViewTextBoxColumn";
+            // 
+            // closetBindingSource
+            // 
+            this.closetBindingSource.DataMember = "Closet";
+            this.closetBindingSource.DataSource = this.smartWardrobeDataSet;
+            // 
+            // smartWardrobeDataSet
+            // 
+            this.smartWardrobeDataSet.DataSetName = "SmartWardrobeDataSet";
+            this.smartWardrobeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // closetTableAdapter
+            // 
+            this.closetTableAdapter.ClearBeforeFill = true;
             // 
             // DelCloset
             // 
@@ -267,8 +271,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.homeButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.smartWardrobeDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.closetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.smartWardrobeDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

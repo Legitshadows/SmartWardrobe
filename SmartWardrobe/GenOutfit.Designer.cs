@@ -151,6 +151,7 @@
             this.btnGen.TabIndex = 46;
             this.btnGen.Text = "Generar";
             this.btnGen.UseVisualStyleBackColor = true;
+            this.btnGen.Click += new System.EventHandler(this.btnGen_Click);
             // 
             // btnSearch
             // 
@@ -249,6 +250,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "GenOutfit";
             this.Text = "GenOutfit";
+            this.Load += new System.EventHandler(this.GenOutfit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.powerButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.homeButton)).EndInit();
